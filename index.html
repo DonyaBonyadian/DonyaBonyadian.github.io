@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section .d-flex {
+  display: flex; /* Use flexbox to align items in one row */
+  justify-content: center; /* Center the items */
+  flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+.contact-item {
+  margin: 0 15px; /* Add margin between items */
+  display: flex; /* Align icon and text in one line */
+  align-items: center; /* Center items vertically */
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-right: 10px; /* Space between icon and text */
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-flex; /* Align text and icons inline */
+  align-items: center; /* Center items vertically */
+}
+
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/1.jpg" alt="About Me">
+    <p>My expertise lies in processing and analyzing data to optimize manufacturing processes, identify bottlenecks, and implement lean techniques. With a deep understanding of big data analytics tools and methodologies, I excel at transforming complex datasets into actionable insights that drive operational efficiency. My background includes extensive experience with technologies such as Apache Spark, Hadoop, Python, MongoDB (NoSQL), and Power BI, enabling me to handle large-scale data challenges effectively.</p>
+    <p>I am passionate about continuous improvement and dedicated to refining Standard Operating Procedures (SOPs) to enhance productivity and quality. By leveraging data-driven insights, I work diligently to streamline processes, reduce waste, and improve overall performance. My approach combines analytical rigor with practical application, ensuring that recommendations are not only based on robust data analysis but also aligned with real-world manufacturing needs.
+
+        Driven by a commitment to lifelong learning, I am always seeking opportunities to expand my knowledge and stay updated with the latest industry trends and technologies.</p>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Auto Insurance Analysis</h5>
+            <p class="card-text">The purpose of this project is to understand the main factors that drive customer tenure within the auto insurance industry for one or more years. The analysis is based on 12 months of United States Auto Insurance survey data.The project involves creating a dashboard (report page) based on the supplied dataset.
+              
+            <a href="https://github.com/DonyaBonyadian/Auto-Insurance-Analysis" class="btn btn-primary">Github Link </a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">sentiment analysis</h5>
+            <p class="card-text"> The sentiment analysis component evaluates the emotional tone expressed in the text, categorizing it as positive, negative, or neutral. This helps to understand the overall sentiment of the content, such as customer feedback, product reviews, or any other form of textual data.the combination of sentiment analysis and text mining offers a comprehensive examination of the documents, enabling data-driven decisions based on textual information.</p>
+            <a href="https://github.com/DonyaBonyadian/Sentimental-Analysis" class="btn btn-primary">Github Link</a>
+      
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Production Analysis</h5>
+            <p class="card-text">This project aims to optimize production efficiency at our customer's manufacturing by developing a Production Scheduling System that integrates with their existing ERP system. By analyzing production data, we can gain insights into bottlenecks, process timings, and variances, which will allow EMCC to minimize downtime and improve overall production performance.
+
+            </p>
+            <a href="https://github.com/DonyaBonyadian/production-Analysis" class="btn btn-primary">Github Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/1.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Python skills applied to data analysis, automation, and web development.Proficient with pandas, NumPy, and Matplotlib for data manipulation and visualization.Experienced in writing Python scripts to automate repetitive tasks and streamline workflows. </p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">developing interactive dashboards and reports that provide real-time insights using both Power BI ad Tableau. I leverage DAX and Power Query to manipulate data and create dynamic visualizations that enhance understanding and decision-making.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">Skilled in designing, creating, and maintaining database structures, ensuring data integrity and optimal performance.writing complex SQL queries to extract, filter, and aggregate data from large datasets, facilitating in-depth analysis.using SQL for data cleaning and transformation tasks, preparing data for analysis and reporting.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">Data Storytelling</h5>
+            <p class="card-text">emphasize storytelling through visuals, presenting complex data in an easily digestible format, helping stakeholders grasp key insights and trends quickly.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="d-flex justify-content-center">
+      <div class="contact-item">
+        <img src="icons/Email.png" alt="Email" class="social-icon">
+        <span>d.bnyd89@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <img src="icons/Phone.png" alt="Phone" class="social-icon">
+        <span>6474505145</span>
+      </div>
+      <div class="contact-item">
+        <a href="https://www.linkedin.com/in/donya-bonyadian" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon"> LinkedIn
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://github.com/DonyaBonyadian" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon"> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
