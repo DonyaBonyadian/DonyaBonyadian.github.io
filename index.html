@@ -5,26 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Specialist Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header Section -->
   <header>
     <div class="container">
-      <h1>Data Analyst Portfolio</h1>
-      <p>Transforming raw data into actionable insights, I specialize in uncovering trends, identifying opportunities, and driving data-driven strategies. With expertise in data extraction, analysis, and visualization, I translate complex datasets into clear, meaningful narratives that support informed decision-making and business growth. My focus is on bridging the gap between data and strategy to deliver impactful results. </p>
+      <h1>Welcome to My Portfolio</h1>
+      <p>Transforming raw data into actionable insights and driving impactful business decisions through analytics.</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
   </header>
 
-  <!-- About Me Section -->
+  <!-- About Section -->
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
       <div class="content">
-        <img src="a1.jpg" alt="Profile Picture">
-        <p>My journey in data began with a bachelor’s degree in Communications Technology Engineering, where I first encountered the complex world of data transmission and its applications. Inspired to go further, I pursued a graduate course in big data analytics, where I gained hands-on experience in collecting, preparing, analyzing, and visualizing data to reveal actionable insights.
-
-Now, I specialize in transforming complex data into clear strategies for growth. I streamline processes, uncover trends, and support decision-making that drives real impact.
-Data isn’t just about numbers—it’s about discovery, clarity, and making a difference for the teams and businesses.</p>
+        <img src="profile.jpg" alt="Profile Picture">
+        <p>
+          I am a Data Specialist with a background in Communications Technology Engineering and a graduate certification in Big Data Analytics. With a strong passion for data-driven strategies, I specialize in extracting meaningful insights from complex datasets to solve business challenges. 
+          From streamlining workflows to building predictive models, my work bridges the gap between data and decision-making for impactful results.
+        </p>
       </div>
     </div>
   </section>
@@ -35,16 +38,20 @@ Data isn’t just about numbers—it’s about discovery, clarity, and making a 
       <h2>Projects</h2>
       <div class="project-cards">
         <div class="card">
-          <img src="p3.jpg" alt="Project 1">
-          <h3>Production Performance</h3>
-          <p>An interactive dashboard to analyze Production trends and identify opportunities.</p>
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Production Performance Dashboard</h3>
+          <p>An interactive dashboard analyzing production trends, improving efficiency, and identifying bottlenecks.</p>
         </div>
         <div class="card">
-          <img src="p2.jpg" alt="Project 2">
+          <img src="project2.jpg" alt="Project 2">
           <h3>Customer Churn Prediction</h3>
-          <p>A machine learning model to predict customer churn using Python.</p>
+          <p>Built a machine learning model to predict customer churn and provide actionable retention strategies.</p>
         </div>
-        <!-- Add more projects as needed -->
+        <div class="card">
+          <img src="project3.jpg" alt="Project 3">
+          <h3>Work Order Costing Analysis</h3>
+          <p>Developed Python scripts to analyze manufacturing costs, optimize pricing, and reduce production expenses.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -53,18 +60,20 @@ Data isn’t just about numbers—it’s about discovery, clarity, and making a 
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
+      <p>If you're interested in working together or have any questions, feel free to reach out!</p>
       <form action="https://formspree.io/f/your_form_id" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
-
